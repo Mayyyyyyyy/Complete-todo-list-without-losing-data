@@ -5,7 +5,7 @@ export const todoReducer = (state,action)=>{
         case 'ADD_TODO':
             return [...state,{content:action.todo.content,id:uuid()}];
         case 'REMOVE_TODO':
-            return state.filter(todo=>todo.id!=action.id);
+            return state.filter(todo=>todo.id!==action.id);
         default:
             return state;
     }

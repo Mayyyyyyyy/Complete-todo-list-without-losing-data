@@ -1,11 +1,10 @@
 import './App.css';
-import AddTodos from './components/AddItems';
 import { ListDetails } from './components/ListDetails';
 import ListProvider from './context/ListProvider';
 import AddItems from './components/AddItems';
 
 import { Layout } from 'antd';
-const { Header, Footer, Sider, Content } = Layout;
+const { Header, Content } = Layout;
 
 
 function App() {
